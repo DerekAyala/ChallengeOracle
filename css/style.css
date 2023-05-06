@@ -45,6 +45,19 @@ input{
   border: none;
   background-color: transparent;
   font-size: 3.5rem;
+  resize: none;
+}
+
+@media (min-width: 700px){
+  .entrada__campo{
+    height: 50rem;
+  }
+}
+
+@media (min-width: 800px){
+  .entrada__campo{
+    height: 60rem;
+  }
 }
 
 .entrada__campo::placeholder{
