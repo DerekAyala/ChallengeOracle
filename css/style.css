@@ -1,6 +1,6 @@
 :root{
   --azul: #0A3871;
-  --fondo: #E5E5E5;
+  --fondo: #f3f5fc;
   --blanco: #FFFFFF;
   --fuente: 'Inter', sans-serif;
 }
@@ -18,10 +18,6 @@ body{
   font-family: var(--fuente);
 }
 
-h1, h2, h3{
-  text-align: center;
-}
-
 input{
   border: none;
 }
@@ -30,4 +26,101 @@ input{
   max-width: 120rem;
   margin: 3rem auto;
   width: 95%;
+  display: grid;
+  gap: 4rem;
 }
+
+.entrada{
+  display: grid;
+  gap: 5rem;
+}
+
+.entrada__formulario, .salida__formulario{
+  display: grid;
+  gap: 2rem;
+}
+
+.entrada__campo{
+  height: 30rem;
+  border: none;
+  background-color: transparent;
+  font-size: 3.5rem;
+}
+
+.entrada__campo::placeholder{
+  color: var(--azul);
+}
+
+.entrada__nota{
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  font-size: 1.2rem;
+  color: #495057;
+}
+
+.entrada__nota p{
+  margin: 0;
+}
+
+.botones{
+  display: grid;
+  gap: 2rem;
+}
+
+.boton{
+  border: var(--azul) 0.1rem solid;
+  border-radius: 2.4rem;
+  padding: 2rem;
+  font-size: 1.6rem;
+  background-color: transparent;
+  color: var(--azul);
+}
+
+.boton--azul{
+  background-color: var(--azul);
+  color: var(--blanco);
+}
+
+.salida{
+  background-color: var(--blanco);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3.2rem;
+  border-radius: 3.2rem;
+  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+  gap: 2.5rem;
+}
+
+.salida h3{
+  font-size: 2.4rem;
+  text-align: center;
+  margin: 0;
+}
+
+.salida p{
+  font-size: 1.6rem;
+  color: #495057;
+  text-align: center;
+  margin: 0;
+}
+
+.salida__img{
+  display: none;
+}
+
+.salida--antes{
+  /* display: none; */
+}
+
+.salida--despues{
+  display: none;
+}
+
+.salida--despues p{
+  text-align: left;
+  line-height: 1.5;
+  font-size: 2.4rem;
+}
+
