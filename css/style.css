@@ -30,14 +30,33 @@ input{
   gap: 4rem;
 }
 
+@media (min-width: 1024px){
+  .contenedor{
+    grid-template-columns: 1fr 0.7fr;
+  }
+}
+
 .entrada{
   display: grid;
   gap: 5rem;
 }
 
+@media (min-width: 1024px){
+  .entrada{
+    display: flex;
+  }
+}
+
 .entrada__formulario, .salida__formulario{
   display: grid;
   gap: 2rem;
+}
+
+@media (min-width: 1024px){
+  .entrada__formulario{
+    margin-top: 8rem;
+    width: 100%;
+  }
 }
 
 .entrada__campo{
@@ -51,12 +70,6 @@ input{
 @media (min-width: 700px){
   .entrada__campo{
     height: 50rem;
-  }
-}
-
-@media (min-width: 800px){
-  .entrada__campo{
-    height: 60rem;
   }
 }
 
@@ -81,6 +94,12 @@ input{
   gap: 2rem;
 }
 
+@media (min-width: 700px){
+  .botones{
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+
 .boton{
   border: var(--azul) 0.1rem solid;
   border-radius: 2.4rem;
@@ -100,10 +119,23 @@ input{
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   padding: 3.2rem;
   border-radius: 3.2rem;
   box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
   gap: 2.5rem;
+}
+
+.salida div{
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+@media (min-width: 1024px){
+  .salida{
+    height: 100%;
+  }
 }
 
 .salida h3{
@@ -117,11 +149,9 @@ input{
   color: #495057;
   text-align: center;
   margin: 0;
+  line-height: 1.5;
 }
 
-.salida__img{
-  display: none;
-}
 
 .salida--antes{
   /* display: none; */
@@ -131,9 +161,20 @@ input{
   display: none;
 }
 
+@media (max-width: 1023px){
+  .salida__img{
+    display:none;
+  }
+}
+
+@media (min-width: 1024px){
+  .salida__img{
+    display:block;
+  }
+}
+
 .salida--despues p{
   text-align: left;
-  line-height: 1.5;
   font-size: 2.4rem;
 }
 
