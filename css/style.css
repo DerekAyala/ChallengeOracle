@@ -67,6 +67,11 @@ input{
   resize: none;
 }
 
+.entrada__campo:focus{
+  outline: none;
+}
+
+
 @media (min-width: 700px){
   .entrada__campo{
     height: 50rem;
