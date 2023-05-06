@@ -14,7 +14,8 @@ html{
 }
 
 body{
-  background-color: var(--primario);
+  background-color: var(--fondo);
+  font-family: var(--fuente);
 }
 
 h1, h2, h3{
@@ -23,4 +24,10 @@ h1, h2, h3{
 
 input{
   border: none;
+}
+
+.contenedor{
+  max-width: 120rem;
+  margin: 3rem auto;
+  width: 95%;
 }
