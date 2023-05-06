@@ -1,0 +1,26 @@
+:root{
+  --azul: #0A3871;
+  --fondo: #E5E5E5;
+  --blanco: #FFFFFF;
+  --fuente: 'Inter', sans-serif;
+}
+
+html{
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body{
+  background-color: var(--primario);
+}
+
+h1, h2, h3{
+  text-align: center;
+}
+
+input{
+  border: none;
+}
