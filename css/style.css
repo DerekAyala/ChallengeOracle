@@ -112,6 +112,7 @@ input{
   font-size: 1.6rem;
   background-color: transparent;
   color: var(--azul);
+  cursor: pointer;
 }
 
 .boton--azul{
